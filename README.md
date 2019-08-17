@@ -4,7 +4,14 @@
 
 The `typeshare_marker` implements an attribute for marking Rust types that should be processed by the `typeshare`.
 
-For example,
+For example:
+
+```toml
+# Cargo.toml 
+
+[dependencies]
+typeshare_marker = "0.0.1"
+```
 
 ```rust
 // Contents of src/person.rs file.
@@ -16,7 +23,16 @@ pub struct Person {
 ```
 
 ```bash
-cargo install typeshare
-typeshare --type=ts src/person.rs
+$ cargo install typeshare
+$ typeshare --type=ts src/person.rs
+
+//
+// Generated
+//
+
+export interface Person {
+	name: string;
+	email: string;
+}
 ```
 
