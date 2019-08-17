@@ -14,7 +14,8 @@ typeshare_marker = "0.0.1"
 ```
 
 ```rust
-// Contents of src/person.rs file.
+// Contents of the src/person.rs file.
+
 #[typeshare]
 pub struct Person {
     name: String,
