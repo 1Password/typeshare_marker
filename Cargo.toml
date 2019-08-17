@@ -1,0 +1,15 @@
+[package]
+name = "typeshare_marker"
+version = "0.0.1"
+authors = ["Roustem <roustem@1password.com>"]
+edition = "2018"
+description = "Include marker attribute for the typeshare generator."
+license = "MIT"
+repository = "https://github.com/1Password/typeshare_marker"
+readme = "README.md"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+
